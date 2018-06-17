@@ -20,28 +20,28 @@ public class Team {
 
     public static void fillList() {
         players = new LinkedHashMap<>();
-        players.put("Alisson", new Player("Alisson", 1, "Goleiro"));
-        players.put("Thiago Silva", new Player("Thiago Silva", 2, "Zagueiro"));
-        players.put("Miranda", new Player("Miranda", 3, "Zagueiro"));
-        players.put("Geromel", new Player("Geromel", 4, "Zagueiro"));
-        players.put("Casemiro", new Player("Casemiro", 5, "Meia"));
-        players.put("Filipe Luís", new Player("Filipe Luís", 6, "Lateral"));
-        players.put("Douglas Costa", new Player("Douglas Costa", 7, "Atacante"));
-        players.put("Renato Augusto", new Player("Renato Augusto", 8, "Meia"));
-        players.put("Gabriel Jesus", new Player("Gabriel Jesus", 9, "Atacante"));
-        players.put("Neymar", new Player("Neymar", 10, "Atacante"));
-        players.put("Coutinho", new Player("Coutinho", 11, "Meia"));
-        players.put("Marcelo", new Player("Marcelo", 12, "Lateral"));
-        players.put("Marquinhos", new Player("Marquinhos", 13, "Zagueiro"));
-        players.put("Danilo", new Player("Danilo", 14, "Lateral"));
-        players.put("Paulinho", new Player("Paulinho", 15, "Meia"));
-        players.put("Cássio", new Player("Cássio", 16, "Goleiro"));
-        players.put("Fernandinho", new Player("Fernandinho", 17, "Meia"));
-        players.put("Fred", new Player("Fred", 18, "Meia"));
-        players.put("Willian", new Player("Willian", 19, "Meia"));
-        players.put("Firmino", new Player("Firmino", 20, "Atacante"));
-        players.put("Taison", new Player("Taison", 21, "Atacante"));
-        players.put("Fagner", new Player("Fagner", 22, "Lateral"));
-        players.put("Ederson", new Player("Ederson", 23, "Goleiro"));
+        players.put("Alisson", new Player("Alisson", 1, "Goleiro", "alisson"));
+        players.put("Thiago Silva", new Player("Thiago Silva", 2, "Zagueiro", "thiago_silva"));
+        players.put("Miranda", new Player("Miranda", 3, "Zagueiro", "miranda"));
+        players.put("Geromel", new Player("Geromel", 4, "Zagueiro", "geromel"));
+        players.put("Casemiro", new Player("Casemiro", 5, "Meia", "casemiro"));
+        players.put("Filipe Luís", new Player("Filipe Luís", 6, "Lateral", "filipe_luis"));
+        players.put("Douglas Costa", new Player("Douglas Costa", 7, "Atacante", "douglas_costa"));
+        players.put("Renato Augusto", new Player("Renato Augusto", 8, "Meia", "renato_augusto"));
+        players.put("Gabriel Jesus", new Player("Gabriel Jesus", 9, "Atacante", "gabriel_jesus"));
+        players.put("Neymar", new Player("Neymar", 10, "Atacante", "neymar"));
+        players.put("Coutinho", new Player("Coutinho", 11, "Meia", "coutinho"));
+        players.put("Marcelo", new Player("Marcelo", 12, "Lateral", "marcelo"));
+        players.put("Marquinhos", new Player("Marquinhos", 13, "Zagueiro", "marquinhos"));
+        players.put("Danilo", new Player("Danilo", 14, "Lateral", "danilo"));
+        players.put("Paulinho", new Player("Paulinho", 15, "Meia", "paulinho"));
+        players.put("Cássio", new Player("Cássio", 16, "Goleiro", "cassio"));
+        players.put("Fernandinho", new Player("Fernandinho", 17, "Meia", "fernandinho"));
+        players.put("Fred", new Player("Fred", 18, "Meia", "fred"));
+        players.put("Willian", new Player("Willian", 19, "Meia", "willian"));
+        players.put("Firmino", new Player("Firmino", 20, "Atacante", "firmino"));
+        players.put("Taison", new Player("Taison", 21, "Atacante", "taison"));
+        players.put("Fagner", new Player("Fagner", 22, "Lateral", "fagner"));
+        players.put("Ederson", new Player("Ederson", 23, "Goleiro", "ederson"));
     }
 }

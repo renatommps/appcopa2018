@@ -8,10 +8,21 @@
     tools:context=".PlayerInfoActivity"
     tools:showIn="@layout/activity_player_info">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:id="@+id/display_result" />
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/display_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/display_result"/>
+    </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
