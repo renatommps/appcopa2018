@@ -38,4 +38,7 @@ dependencies {
 
     // circle imageview
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    // google maps
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
 }

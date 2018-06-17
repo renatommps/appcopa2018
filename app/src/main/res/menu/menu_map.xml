@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.appcopa2018.DisplayMapLocationActivity">
+    <item
+        android:id="@+id/map_type_none"
+        android:title="@string/map_type_none" />
+
+    <item
+        android:id="@+id/map_type_normal"
+        android:title="@string/map_type_normal" />
+
+    <item
+        android:id="@+id/map_type_terrain"
+        android:title="@string/map_type_terrain" />
+
+    <item
+        android:id="@+id/map_type_satellite"
+        android:title="@string/map_type_satellite" />
+
+    <item
+        android:id="@+id/map_type_hybrid"
+        android:title="@string/map_type_hybrid" />
+</menu>

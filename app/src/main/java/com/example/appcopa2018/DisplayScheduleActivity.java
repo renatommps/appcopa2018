@@ -48,7 +48,7 @@ public class DisplayScheduleActivity extends AppCompatActivity {
             String imgUrlServia = "https://hdlogo.files.wordpress.com/2018/04/serbia-flag-logo.png";
 
             mPartidas.add( new Partida(9, dataJogo1, "E", "Arena Rostov", "Brasil", imgUrlBrasil, "Suiça", imgUrlSuica) );
-            mPartidas.add( new Partida(25, dataJogo2, "E", "Krestovsky", "Brasil", imgUrlBrasil, "Costa Rica", imgUrlCostaRica) );
+            mPartidas.add( new Partida(25, dataJogo2, "E", "Estádio São Petersburgo", "Brasil", imgUrlBrasil, "Costa Rica", imgUrlCostaRica) );
             mPartidas.add( new Partida(41, dataJogo3, "E", "Otkrytiye Arena", "Servia", imgUrlServia, "Brasil", imgUrlBrasil) );
 
             initRecyclerView();

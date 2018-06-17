@@ -1,6 +1,8 @@
 package com.example.appcopa2018;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -30,11 +32,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     private Context mContext;
     private ArrayList<Partida> mPartidas;
-
+    private Typeface mFontawesome;
 
     public RecyclerViewAdapter(Context mContext, ArrayList<Partida> mPartidas) {
         this.mContext = mContext;
         this.mPartidas = mPartidas;
+        this.mFontawesome = Typeface.createFromAsset(mContext.getAssets(), "fonts/fontawesome.ttf");
+
     }
 
     @NonNull
@@ -67,15 +71,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.time2name.setText(mPartidas.get(position).getTime2());
         holder.dataHora.setText(formatDateTimeField(mPartidas.get(position).getData()));
 
-//        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Log.d(TAG, "clicked on: " + mImageNames.get(position));
-//
-//                Toast toast = Toast.makeText(mContext, mImageNames.get(position), Toast.LENGTH_SHORT);
-//                toast.show();
-//            }
-//        });
+        holder.mapLocationIcon.setTypeface(mFontawesome);
+
+        holder.mapLocationIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "clicked on: " + mPartidas.get(position));
+
+                Intent intent = new Intent(mContext, DisplayMapLocationActivity.class);
+                intent.putExtra("STADIUM_NAME", mPartidas.get(position).getEstadio());
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     private String formatDateTimeField(Date data) {
@@ -123,6 +130,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         TextView time2name;
         CircleImageView imgTime2;
         TextView dataHora;
+        TextView mapLocationIcon;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -141,6 +149,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             time2name = itemView.findViewById(R.id.time_2_name);
             imgTime2 = itemView.findViewById(R.id.img_time_2);
             dataHora = itemView.findViewById(R.id.data_hora);
+            mapLocationIcon = itemView.findViewById(R.id.map_location_icon);
         }
     }
 }

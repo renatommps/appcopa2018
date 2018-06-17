@@ -9,7 +9,7 @@
         android:id="@+id/infos_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="15dp"
+        android:paddingHorizontal="5dp"
         android:paddingVertical="5dp"
         android:gravity="center">
 
@@ -18,10 +18,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
             android:text="Jogo"
             android:textColor="#000"
-            android:textSize="17sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/jogo_numero"
@@ -32,62 +31,74 @@
             android:layout_toRightOf="@id/jogo_text"
             android:text="1"
             android:textColor="#000"
-            android:textSize="17sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/separator_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/jogo_numero"
             android:text=" - "
             android:textColor="#000"
-            android:textSize="17sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/grupo_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/separator_1"
             android:text="Grupo"
             android:textColor="#000"
-            android:textSize="17sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/grupo_nome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/grupo_text"
             android:text="A"
             android:textColor="#000"
-            android:textSize="17sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/separator_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/grupo_nome"
             android:text=" - "
             android:textColor="#000"
-            android:textSize="17sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/estadio_nome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/separator_2"
-            android:text="Estadio"
+            android:text="Estádio"
             android:textColor="#000"
-            android:textSize="17sp" />
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/map_location_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/estadio_nome"
+            android:text="@string/font_awesome_android_location_icon"
+            android:textColor="#FF0000"
+            android:textSize="25sp" />
+
     </RelativeLayout>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -102,7 +113,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:text="17/06 (dom) - 15h00"
-            android:textSize="17sp" />
+            android:textSize="15sp" />
 
     </RelativeLayout>
 
