@@ -7,9 +7,10 @@
     tools:context=".DisplayScheduleActivity">
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_schedule"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycler_view_schedule">
+        tools:padding="4dp">
 
     </android.support.v7.widget.RecyclerView>
 </android.support.constraint.ConstraintLayout>
